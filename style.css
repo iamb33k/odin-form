@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#pics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height:100vh;
+    min-width: 400px;
+}
+
+#big-pic{
+    display: flex;
+    object-fit: cover;
+    flex-shrink: 0;
+    flex-grow: 1;
+    min-width: 400px;
+    min-height: 100vh;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: beige;
+    font-weight: bold;
+    min-height: 200px;
+    padding: 20px;
+    font-size: large;
+}
+
+.lets-do-this{
+    padding-left: 20px;
+}
+
+#signup-form-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.first-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.last-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.pass {
+    display: flex;
+    flex-direction: column;
+}
+
+.conf-pass {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-name {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-check {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: beige;
+    font-weight: bold;
+    font-size: medium;
+    padding: 20px;
+    min-height: 150px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+input{
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+  input:invalid {
+    border-color: red;
+  }
+  
+  input:valid {
+    border-color: black;
+  }
